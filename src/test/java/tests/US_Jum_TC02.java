@@ -35,7 +35,7 @@ public class US_Jum_TC02 {
         // get the value of how many items are in the basket
 
         String expectedValue="1";
-        String actualValue= jumboTestPage.numberIcon.getAttribute("xpath");
+        String actualValue= jumboTestPage.numberIcon.getText();
         System.out.println(actualValue);
         Assert.assertEquals(actualValue,expectedValue);
 
