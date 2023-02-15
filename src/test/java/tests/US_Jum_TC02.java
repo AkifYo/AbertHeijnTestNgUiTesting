@@ -2,6 +2,7 @@ package tests;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.JumboTestPage;
 import utilities.Driver;
@@ -27,12 +28,16 @@ public class US_Jum_TC02 {
         actions.sendKeys(Keys.PAGE_DOWN).perform();
 
         ReusableMethods.bekle(2);
+        jumboTestPage.addBtn.click();
+        // go to basket element and click it
+        ReusableMethods.bekle(2);
+        jumboTestPage.basketIcon.click();
+        // get the value of how many items are in the basket
 
-            jumboTestPage.addBtn.click();
-
-
-
-
+        String expectedValue="1";
+        String actualValue= jumboTestPage.numberIcon.getAttribute("xpath");
+        System.out.println(actualValue);
+        Assert.assertEquals(actualValue,expectedValue);
 
 
     }

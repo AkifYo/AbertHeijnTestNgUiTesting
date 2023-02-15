@@ -33,4 +33,10 @@ public class JumboTestPage {
     @FindBy (xpath="(//button[@data-testid='jum-button'])[12]")
     public WebElement addBtn;
 
+
+    @FindBy (xpath="//button[@data-label='[object Object][object Object]']")
+    public WebElement basketIcon;
+    @FindBy (xpath="(//button[@class='jum-button button is-quantity success'])[2]")
+    public WebElement numberIcon;
+
 }
