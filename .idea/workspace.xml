@@ -7,9 +7,7 @@
     <list default="true" id="a05c3d50-5453-4963-9681-c75216db8c77" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/JumboTestPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/JumboTestPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/US_Jum_TC02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/US_Jum_TC02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/JumboTestPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/JumboTestPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/US_Jum_TC02.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/US_Jum_TC02.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/ReusableMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/ReusableMethods.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +38,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.US_Jum_TC02.test01">
+  <component name="RunManager" selected="TestNG.US_Jum_TC03.test01">
     <configuration name="US01_TC_01.testCase01" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="com.AlbertHeijn.nl" />
       <extension name="coverage">
@@ -95,8 +93,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="US_Jum_TC03.test01" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="com.AlbertHeijn.nl" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.US_Jum_TC03" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.US_Jum_TC03.test01" />
         <item itemvalue="TestNG.US_Jum_TC02.test01" />
         <item itemvalue="TestNG.US_Jum_TC01.test01" />
         <item itemvalue="TestNG.US01_TC_01.testCase01" />

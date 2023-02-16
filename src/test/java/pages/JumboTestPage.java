@@ -38,5 +38,7 @@ public class JumboTestPage {
     public WebElement basketIcon;
     @FindBy (xpath="(//button[@class='jum-button button is-quantity success'])[2]")
     public WebElement numberIcon;
+    @FindBy (xpath="//form[@analytics-tag='search']//input[@placeholder='Waar ben je naar op zoek?']")
+    public WebElement searchBar;
 
 }

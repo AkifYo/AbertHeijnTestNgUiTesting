@@ -172,4 +172,12 @@ public class ReusableMethods {
         // click to login btn
         jumboTestPage.submitBtn.click();
     }
+    public static void cookiesHandleJumbo(){
+        Actions actions= new Actions(Driver.getDriver());
+        Driver.getDriver().get(ConfigReader.getProperty("jumUrl"));
+        // locate the cookies btn end click it
+        ReusableMethods.bekle(2);
+        JumboTestPage jumboTestPage= new JumboTestPage();
+        jumboTestPage.cookiBtn.click();
+    }
 }
