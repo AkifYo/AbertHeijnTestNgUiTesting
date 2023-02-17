@@ -41,4 +41,9 @@ public class JumboTestPage {
     @FindBy (xpath="//form[@analytics-tag='search']//input[@placeholder='Waar ben je naar op zoek?']")
     public WebElement searchBar;
 
+    @FindBy (xpath="//a[@class='link']")
+    public WebElement firstProduct;
+    @FindBy (xpath="//h1[@data-testid='jum-heading']")
+    public WebElement firstProductText;
+
 }
