@@ -45,5 +45,7 @@ public class JumboTestPage {
     public WebElement firstProduct;
     @FindBy (xpath="//h1[@data-testid='jum-heading']")
     public WebElement firstProductText;
+    @FindBy (xpath="(//*[name()='path'])[2]")
+    public WebElement jumboLogo;
 
 }
