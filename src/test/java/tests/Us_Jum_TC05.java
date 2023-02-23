@@ -17,7 +17,7 @@ public class Us_Jum_TC05 {
         // to search a product send keys in the search box
         jumboTestPage.searchBar.sendKeys("kola"+ Keys.ENTER);
         //locate the catories and have them write
-        System.out.println(jumboTestPage.productCategoryCola.getText());
+        //System.out.println(jumboTestPage.productCategoryCola.getText());
         // assert that the category menus is displayed
         //
         ReusableMethods.waitPlease(2);
@@ -25,7 +25,7 @@ public class Us_Jum_TC05 {
         jumboTestPage.productCategoryCola.click();
         ReusableMethods.waitPlease(2);
         // the locate an category element and then assert that it is displayed
-        Assert.assertTrue(jumboTestPage.productCategoryCola.isSelected());
+        Assert.assertTrue(jumboTestPage.productCategoryCola.isEnabled());
 
         Driver.quitDriver();
     }

@@ -52,7 +52,7 @@ public class JumboTestPage {
     public WebElement firstProductText;
     @FindBy (xpath="(//*[name()='path'])[2]")
     public WebElement jumboLogo;
-    @FindBy (xpath="//input[@data-testid='jum-input-checkbox']")
+    @FindBy (xpath="//label[@data-testid='jum-input-label']")
     public WebElement productCategoryCola;
 
     //@FindBys(xpath="//h1[@data-testid='jum-heading']")
