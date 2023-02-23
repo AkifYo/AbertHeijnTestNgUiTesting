@@ -76,7 +76,7 @@ public class ReusableMethods {
 
     //   HARD WAIT WITH THREAD.SLEEP
 //   waitFor(5);  => waits for 5 second
-    public static void bekle(int saniye) {
+    public static void waitPlease(int saniye) {
         try {
             Thread.sleep(saniye * 1000);
         } catch (InterruptedException e) {
@@ -112,7 +112,7 @@ public class ReusableMethods {
                 element.click();
                 return;
             } catch (WebDriverException e) {
-                bekle(1);
+                waitPlease(1);
             }
         }
     }
@@ -152,23 +152,23 @@ public class ReusableMethods {
         Actions actions= new Actions(Driver.getDriver());
         Driver.getDriver().get(ConfigReader.getProperty("jumUrl"));
         // locate the cookies btn end click it
-        ReusableMethods.bekle(2);
+        ReusableMethods.waitPlease(2);
         JumboTestPage jumboTestPage= new JumboTestPage();
         jumboTestPage.cookiBtn.click();
-        ReusableMethods.bekle(2);
+        ReusableMethods.waitPlease(2);
         //navigate to mijn jumbo menu button
         actions.moveToElement(jumboTestPage.mijnJumboBtn).perform();
-        ReusableMethods.bekle(1);
+        ReusableMethods.waitPlease(1);
         // then click it
         jumboTestPage.mijnJumboBtn.click();;
         // click to inlig btn to reach login page
         jumboTestPage.inlogBtn.click();
         //send the mail username textbox
         jumboTestPage.usernameTextbox.sendKeys(email);
-        ReusableMethods.bekle(1);
+        ReusableMethods.waitPlease(1);
         // send the password to passwordtextbox
         jumboTestPage.passwordTextbox.sendKeys(password);
-        ReusableMethods.bekle(1);
+        ReusableMethods.waitPlease(1);
         // click to login btn
         jumboTestPage.submitBtn.click();
     }
@@ -176,7 +176,7 @@ public class ReusableMethods {
         Actions actions= new Actions(Driver.getDriver());
         Driver.getDriver().get(ConfigReader.getProperty("jumUrl"));
         // locate the cookies btn end click it
-        ReusableMethods.bekle(2);
+        ReusableMethods.waitPlease(2);
         JumboTestPage jumboTestPage= new JumboTestPage();
         jumboTestPage.cookiBtn.click();
     }

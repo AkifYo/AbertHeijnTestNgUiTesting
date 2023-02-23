@@ -1,9 +1,14 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
+
+import java.awt.*;
 
 public class JumboTestPage {
     public JumboTestPage() {
@@ -47,5 +52,9 @@ public class JumboTestPage {
     public WebElement firstProductText;
     @FindBy (xpath="(//*[name()='path'])[2]")
     public WebElement jumboLogo;
+    @FindBy (xpath="//input[@data-testid='jum-input-checkbox']")
+    public WebElement productCategoryCola;
 
+    //@FindBys(xpath="//h1[@data-testid='jum-heading']")
+    //public WebElement jumboHeading;
 }
