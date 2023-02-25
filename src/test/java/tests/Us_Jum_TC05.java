@@ -26,6 +26,10 @@ public class Us_Jum_TC05 {
         ReusableMethods.waitPlease(2);
         // the locate an category element and then assert that it is displayed
         Assert.assertTrue(jumboTestPage.productCategoryCola.isEnabled());
+        System.out.println(jumboTestPage.productCategoryCola.getText());
+        String expectedValue = "Cola";
+        String actualValue = jumboTestPage.productCategoryCola.getText();
+        Assert.assertTrue(actualValue.contains(expectedValue));
 
         Driver.quitDriver();
     }
