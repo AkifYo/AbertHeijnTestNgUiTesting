@@ -7,7 +7,7 @@ import pages.JumboTestPage;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
-public class Us_Jum_TC05 {
+public class US_Jum_TC05 {
     @Test
     public void test01() {
         JumboTestPage jumboTestPage = new JumboTestPage();
@@ -31,7 +31,7 @@ public class Us_Jum_TC05 {
         String expectedValue = "Cola";
         String actualValue = jumboTestPage.productCategoryCola.getText();
         Assert.assertTrue(actualValue.contains(expectedValue));
-
+        // we can see the categories
         Driver.quitDriver();
     }
 }
