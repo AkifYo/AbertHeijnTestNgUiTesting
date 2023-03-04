@@ -54,6 +54,11 @@ public class JumboTestPage {
     public WebElement jumboLogo;
     @FindBy (xpath="//label[@data-testid='jum-input-label']")
     public WebElement productCategoryCola;
+    @FindBy (xpath="(//a[@class='item-link'])[62]")
+    public WebElement faceIcon;
+
+
+
 
     //@FindBys(xpath="//h1[@data-testid='jum-heading']")
     //public WebElement jumboHeading;
