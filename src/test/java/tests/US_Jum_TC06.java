@@ -15,13 +15,14 @@ public class US_Jum_TC06 {
         JumboTestPage jumboTestPage= new JumboTestPage();
         // handle the cookies button
         ReusableMethods.cookiesHandleJumbo();
-        // look  op the social media links
+        // look  at the social media links
         // go to pagedown
         action.keyDown(Keys.END).perform();
         ReusableMethods.waitPlease(1);
         action.keyUp(Keys.END).perform();
         // locate the social media icons
         System.out.println(jumboTestPage.faceIcon.getText());
+        //use the down bar
         Assert.assertTrue(jumboTestPage.faceIcon.isDisplayed());
 
 
