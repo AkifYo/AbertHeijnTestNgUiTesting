@@ -10,6 +10,7 @@ import utilities.ReusableMethods;
 public class US_Jum_TC05 {
     @Test
     public void test01() {
+        Driver.getDriver().get("jumUrl");
         JumboTestPage jumboTestPage = new JumboTestPage();
         // An user should be able to filter by category by clicking on the filter button
         // first you need to navogate to home page
@@ -32,6 +33,6 @@ public class US_Jum_TC05 {
         String actualValue = jumboTestPage.productCategoryCola.getText();
         Assert.assertTrue(actualValue.contains(expectedValue));
         // we can see the categories
-        Driver.quitDriver();
+        Driver.closeDriver();
     }
 }
