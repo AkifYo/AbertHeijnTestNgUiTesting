@@ -1,4 +1,4 @@
-package pages;
+package com_jumbo_pages;
 
 
 import org.openqa.selenium.WebElement;

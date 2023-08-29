@@ -4,7 +4,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.JumboTestPage;
+import com_jumbo_pages.JumboTestPage;
 import utilities.Driver;
 import utilities.ReusableMethods;
 

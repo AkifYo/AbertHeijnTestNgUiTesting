@@ -1,7 +1,7 @@
 package tests;
 
 import org.testng.annotations.Test;
-import pages.JumboTestPage;
+import com_jumbo_pages.JumboTestPage;
 import utilities.Driver;
 import utilities.ReusableMethods;
 

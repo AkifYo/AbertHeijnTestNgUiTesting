@@ -2,7 +2,7 @@ package tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.JumboTestPage;
+import com_jumbo_pages.JumboTestPage;
 import utilities.ReusableMethods;
 
 public class US_Jum_TC04 {

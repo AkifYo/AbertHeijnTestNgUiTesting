@@ -7,8 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="com.AlbertHeijn.nl" />
+        <module name="JumboTestNgUiTesting" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="JumboTestNgUiTesting" target="19" />
+    </bytecodeTargetLevel>
   </component>
 </project>
