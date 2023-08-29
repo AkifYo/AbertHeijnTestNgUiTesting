@@ -9,13 +9,13 @@ public class BasePage {
     public void  setDriver(WebDriver driver){
     BasePage.driver=driver;
     }
-    protected WebElement find(By locator){
+    public WebElement find(By locator){
       return   driver.findElement(locator);
     }
-    protected  void click(By locator){
+    public  void click(By locator){
         find(locator).click();
     }
-    protected void sendKeys(By locator, String keys){
+    public void sendKeys(By locator, String keys){
         find(locator).sendKeys(keys);
         System.out.println("Keys :"+keys);
     }
