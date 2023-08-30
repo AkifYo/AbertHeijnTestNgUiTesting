@@ -27,7 +27,7 @@ public class JumboTestPage {
     public WebElement usernameTextbox;
     @FindBy (id ="password")
     public WebElement passwordTextbox;
-    @FindBy (id ="submit")
+    @FindBy (css =".c35f6b169")
     public WebElement submitBtn;
     //products menu
     @FindBy (xpath="//a[normalize-space()='Producten']")

@@ -30,7 +30,7 @@ public class US_Jum_TC01 {
         ReusableMethods.waitPlease(1);
         // send the password to passwordtextbox
         jumboTestPage.passwordTextbox.sendKeys(ConfigReader.getProperty("password"));
-        ReusableMethods.waitPlease(1);
+        ReusableMethods.waitPlease(2);
         // click to login btn
         jumboTestPage.submitBtn.click();
 
