@@ -20,7 +20,7 @@ public class US_Jum_TC01 {
         ReusableMethods.waitPlease(2);
         //navigate to mijn jumbo menu button
         actions.moveToElement(jumboTestPage.mijnJumboBtn).perform();
-        ReusableMethods.waitPlease(1);
+        ReusableMethods.waitPlease(2);
         // then click it
         jumboTestPage.mijnJumboBtn.click();;
         // click to inlig btn to reach login page
@@ -30,7 +30,7 @@ public class US_Jum_TC01 {
         ReusableMethods.waitPlease(1);
         // send the password to passwordtextbox
         jumboTestPage.passwordTextbox.sendKeys(ConfigReader.getProperty("password"));
-        ReusableMethods.waitPlease(2);
+        ReusableMethods.waitPlease(1);
         // click to login btn
         jumboTestPage.submitBtn.click();
 
