@@ -12,9 +12,9 @@ public class US_Jum_TC07 {
 
 
         Driver.getDriver().get("jumurl");
-        ReusableMethods.waitPlease(2);
+        ReusableMethods.waitPlease(1);
         JumboTestPage jumboTestPage= new JumboTestPage();
         jumboTestPage.cookiBtn.click();
-        ReusableMethods.waitPlease(2);
+        ReusableMethods.waitPlease(1);
     }
 }
