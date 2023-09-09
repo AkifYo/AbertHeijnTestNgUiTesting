@@ -12,9 +12,10 @@ public class US_Jum_TC04 {
         JumboTestPage jumboTestPage= new JumboTestPage();
         // first navigate to the jumbo main page
         ReusableMethods.cookiesHandleJumbo();
-        // locate the logo of the company and assert that the logo is displayed
+        //  locate the logo of the company and assert that the logo is displayed
         Assert.assertTrue(jumboTestPage.jumboLogo.isDisplayed());
         System.out.println( jumboTestPage.jumboLogo.isDisplayed());
+
 
 
     }
